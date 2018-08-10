@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      {{ organization.name }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3> Organization </h3>
+  <p>
+    {{ organization.description }}
+  </p>
+
+  <br>
+  <br>
+
+  <button ion-button block (click)="deleteOrganization(organization.id, organization.name)">
+    Delete Organization
+  </button>
+
+</ion-content>
